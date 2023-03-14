@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>airline</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/tem3.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="icon" href="images/logo star1.png">
+    </head>
+    <body>
+        <header class="container-fluid p-0">
+            <nav class="navbar navbar-expand-md navbar-dark h-100 p-0 m-0">
+                <img src="images/logo star1.png" class="navbar-brand h-100 ml-4" alt="airplane" style="width:100px">
+                <h3 class="navbar-brand text-dark position-relative">airline<div class="bg-dark"></div></h3>
+                <button class="navbar-toggler bg-success mr-4" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="spanhead">
+                    <snap class="navbar-toggler-icon"></snap>
+                </button>
+                <div class="special collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-dark nav-link" href="#">Online Check-in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-dark nav-link" href="#">Manage My Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-dark nav-link" href="#">Contetn</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="text-dark nav-link dropdown-toggle" data-toggle="dropdown" href="#">Country</a>
+                            <div class="dropdown-menu scroll bg-success" id="drop">
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Afghanistan"><img src="images/Afghanistan.png" class="rounded-circle" style="width:20px;height: 20px;"> Afghanistan</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Argentina"><img src="images/Argentina.jfif" class="rounded-circle" style="width:20px;height: 20px;"> Argentina</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Australia"><img src="images/Australia.jfif" class="rounded-circle" style="width:20px;height: 20px;"> Australia</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Brazil"><img src="images/Brazil.jfif" class="rounded-circle" style="width:20px;height: 20px;"> Brazil</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Burkina Faso"><img src="images/Burkina Faso.png" class="rounded-circle" style="width:20px;height: 20px;"> Burkina Faso</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Cameroon"><img src="images/Cameroon.png" class="rounded-circle" style="width:20px;height: 20px;"> Cameroon</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Canada"><img src="images/Canada.png" class="rounded-circle" style="width:20px;height: 20px;"> Canada</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/China"><img src="images/China.jfif" class="rounded-circle" style="width:20px;height: 20px;"> China</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Croatia"><img src="images/Croatia.png" class="rounded-circle" style="width:20px;height: 20px;"> Croatia</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Denmark"><img src="images/Denmark.png" class="rounded-circle" style="width:20px;height: 20px;"> Denmark</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Egypt"><img src="images/Egypt.png" class="rounded-circle" style="width:20px;height: 20px;"> Egypt</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/France"><img src="images/France.jfif" class="rounded-circle" style="width:20px;height: 20px;"> France</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Germany"><img src="images/Germany.png" class="rounded-circle" style="width:20px;height: 20px;"> Germany</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Ghana"><img src="images/Ghana.png" class="rounded-circle" style="width:20px;height: 20px;"> Ghana</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Iceland"><img src="images/Iceland.png" class="rounded-circle" style="width:20px;height: 20px;"> Iceland</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/India"><img src="images/India.png" class="rounded-circle" style="width:20px;height: 20px;"> India</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Ireland"><img src="images/Ireland.png" class="rounded-circle" style="width:20px;height: 20px;"> Ireland</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Italy"><img src="images/Italy.png" class="rounded-circle" style="width:20px;height: 20px;"> Italy</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Japan"><img src="images/Japan.png" class="rounded-circle" style="width:20px;height: 20px;"> Japan</a>
+                                <a class="dropdown-item text-dark" target="_blank" href="https://en.wikipedia.org/wiki/Kenya"><img src="images/Kenya.png" class="rounded-circle" style="width:20px;height: 20px;"> Kenya</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="nav-item ml-auto input-group mb-2" style="width:auto">
+                        <input type="search" class="form-control bord" placeholder="Search" id="search">
+                        <div class="input-group-append">
+                            <input class="btn btn-success" id="done" type="submit" value="Search" style="border-radius: 0 3px 3px 0;">
+                        </div>
+                        <button class="btn btn-outline-success ml-2 login mr-4 bord" data-toggle="modal" data-target="#myModal" type="button">Book</button>
+                    </div> <!-- right -->
+                </div> <!-- nav right -->
+            </nav>
+        </header>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">BOOK NOW</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="uname">Enter Your Email Adress</label>
+                                <input type="email" class="form-control bord" id="uname" placeholder="Enter Your Email" name="uname" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="switch1">
+                                <label class="custom-control-label" for="switch1">Toggle me</label>
+                            </div>
+                            <input type="submit" class="btn btn-outline-success mt-2 ">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- model -->
+        
+        <section class="sec1" style="width: 100%;height: 80vh;margin-top: 70px; z-index: 0;">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active bg-success mb-2"></li>
+                    <li data-target="#demo" data-slide-to="1" class="bg-success mb-2"></li>
+                    <li data-target="#demo" data-slide-to="2" class="bg-success mb-2"></li>
+                    <li data-target="#demo" data-slide-to="3" class="bg-success mb-2"></li>
+                    <li data-target="#demo" data-slide-to="4" class="bg-success mb-2"></li>
+                    <li data-target="#demo" data-slide-to="5" class="bg-success mb-2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="images/image cairo.jpg" class="w-100" style="height:80vh" alt="Chicago">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">Cairo</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="images/img sharm.jpeg" class="w-100" style="height:80vh" alt="New York">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">Sharm El-Shekh</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img maldif.jpg" class="w-100" style="height:80vh" alt="New York">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">the moldive Islands</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img safary.jpg" class="w-100" style="height:80vh" alt="Los Angeles">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">Safary</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img luxor.jpg" class="w-100" style="height:80vh" alt="New York">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">Luxor</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img morsi.jpg" class="w-100" style="height:80vh" alt="New York">
+                        <div class="carousel-caption text-dark rounded op">
+                            <h3 class="mb-4 text-success">Marsa Alam</h3>
+                            <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">View More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+    
+            </div>
+        </section> <!-- sec1 -->
+        <section class="p-5 mt-4 shadow-lg bg-white">
+            <h1>Find Cheap Flights</h1>
+            <p>Plan Your Tourist Trips Quickly And Safely With Airline Site</p>
+                <button class="mb-4 btn btn-success"><a href="#" target="_blank" class="text-decoration-none text-white">Find best deals </a></button>
+        </section> <!-- sec2 -->
+        <hr>
+        <section class="shadow-lg p-1 mt-4">
+            <h1 class="text-center p-3">Frequently Asked Questions</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="border-0 d-flex justify-content-between align-center w-100 accordion-button btn-outline-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3 class="pl-4">How does Wingie offer the cheapest flights?</h3>
+                        <i class="fa-solid fa-chevron-down ml-auto"></i>
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="pl-4 pr-4 pt-2 pb-2 accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            According to the destination you are looking for, Wingie compares all flights of hundreds of 
+                            airlines and lists them, especially the most affordable ones. It lists the most suitable flights for the destination 
+                            you want to go and the date of your planned travel, as well as offers daily estimated prices for 
+                            recent dates with the Price Graph. Thus, you can see the date of the most affordable flight and 
+                            if you have flexible travel plans, you can book your more affordable flight.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="border-0 d-flex justify-content-between pt-2 pb-2 w-100 accordion-button btn-outline-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h3 class="pl-4">How does Wingie keep my transactions secure?</h3>
+                            <i class="fa-solid fa-chevron-down ml-auto"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="pl-4 pr-4 pt-2 pb-2 accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            All your transactions on Wingie are secured with an SSL certificate. Your personal and credit card 
+                            information are protected by institutions that comply with PCI DSS standards. Wingie also offers 3D Security 
+                            assurance in your flight bookings.
+                            You can safely book all your flights on Wingie.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="border-0 d-flex justify-content-between pt-2 pb-2 w-100 accordion-button btn-outline-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h3 class="pl-4">Can I find all the airlines and all the flights I'm looking for on Wingie?</h3>
+                            <i class="fa-solid fa-chevron-down ml-auto"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="pl-4 pr-4 pt-2 pb-2 accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            In your flight searches on Wingie, you can find direct or connecting flights arranged by airlines for the destination 
+                            you want to go. In addition, thanks to our LogiConnect feature, you can see the LogiConnect flights that we have 
+                            created with flights that are cheaper or shorter than the existing routes
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="border-0 d-flex justify-content-between pt-2 pb-2 w-100 accordion-button btn-outline-success collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h3 class="pl-4">How can I book flights on Wingie?</h3>
+                            <i class="fa-solid fa-chevron-down ml-auto"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="pl-4 pr-4 pt-2 pb-2 accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You can use our website to book your flights from Wingie. After entering the destination and date you want to go, 
+                            you can compare the flights of hundreds of airlines, choose the most suitable flight for you and book it safely and quickly.
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section> <!-- sec3 -->
+        <hr>
+        <section class="shadow-lg p-1 mt-4">
+            <h1 class="text-center p-3">Domestic Flights</h1>
+            <div class="bg-success rounded p-5 text-white">
+                <p>for watch Top Domestic Flights <a href="#" class="text-decoration-none text-warning"> Click here</a></p>
+                <button class="btn btn-outline-light"data-toggle="modal" data-target="#myModal" type="button">Book</button>
+                <h4 class="shadow-lg rounded mt-5 w-50 text-center p-2 ml-5"><a href="#" class="text-decoration-none text-white">Find Cheap Flights</a></h4>
+            </div>
+        </section> <!-- sec4 -->
+        <hr>
+        <section class="shadow-lg p-1 mt-4">
+            <h1 class="text-center p-3">Destinations Worldwide</h1>
+            <div class="bg-success rounded p-5 text-white">
+                <p>for watch Top Destinations Worldwide<a href="#" class="text-decoration-none text-warning"> Click here</a></p>
+                <button class="btn btn-outline-light"data-toggle="modal" data-target="#myModal" type="button">Book</button>
+                <h4 class="shadow-lg rounded mt-5 w-50 text-center p-2 ml-5"><a href="#" class="text-decoration-none text-white">Find Cheap Flights</a></h4>
+            </div>
+        </section> <!-- sec5 -->
+        <hr>
+        <section class="shadow-lg p-1 mt-4">
+            <h1 class="text-center p-3">Countries</h1>
+            <div class="bg-success rounded p-5 text-white">
+                <p>for watch Popular Countries<a href="#" class="text-decoration-none text-warning"> Click here</a></p>
+                <button class="btn btn-outline-light"data-toggle="modal" data-target="#myModal" type="button">Book</button>
+                <h4 class="shadow-lg rounded mt-5 w-50 text-center p-2 ml-5"><a href="#" class="text-decoration-none text-white">Find Cheap Flights</a></h4>
+            </div>
+        </section> <!-- sec6 -->
+        <hr>
+        <section class="starimage"style="height:40vh">
+        </section> <!-- sec7 -->
+        <section class="shadow-lg p-1 mt-4">
+            <h1 class="text-center text-success mt-4">Domestic Flights</h1>
+            <div class="row justify-content-around p-5">
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header  p-0 pt-3">
+                        <img src="images/Hurghada img.jfif" class="w-100 m-0 rounded" style="height:200px">
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Hurghada</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        Hurghada is located on the western shore of the Red Sea.....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Istanbul img.webp" class="w-100 m-0 rounded" style="height:200px">
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Istanbul</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        It is the largest city in Turkey and is seen as an economic center....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Dubai img.jpg" class="w-100 m-0 rounded" style="height:200px"> 
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Dubai</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        The most populous city in the United Arab Emirates....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Marsa Alam img.jfif" class="w-100 m-0 rounded" style="height:200px"> 
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Marsa Alam </h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        An Egyptian tourist city located in the Red Sea Governorate....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/sohag city.jpg" class="w-100 m-0 rounded" style="height:200px"> 
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Sohag</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        It is one of the four governorates that make up the South Upper Egypt region....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Kuwait img.jpg" class="w-100 m-0 rounded" style="height:200px"> 
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Kuwait</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        An Arab country located in the Middle East to the southwest of the Asian continent....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+                <div class="card shadow-lg text-light col-lg-3 col-md-4 col-sm-6 ml-1 mt-5 pb-3">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Germany img.jpg" class="w-100 m-0 rounded" style="height:200px"> 
+                    </div>
+                    <h4 class="card-body text-dark mb-0">Germany</h4>
+                    <p class="card-body text-dark mt-0 pt-0">
+                        It is a democratic federal republic, located in the center of western Europe....
+                    </p>
+                    <div class="card-footer">
+                        <button class="btn btn-success">View more</button>
+                    </div>
+                </div>
+            </div>     
+            
+        </section> <!-- sec8 -->
+        <section class="starimage2"style="height:40vh">
+        </section> <!-- sec9 -->
+        <section class="w-100 shadow-lg pb-5">
+            <h1 class="text-center pt-3 pb-4 text-success">The most famous airlines</h1>
+            <div class="row justify-content-center">
+                <div class="card m-3 bg-success text-light col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/EgyptAirLogo.gif.crdownload" class="w-100 m-0 rounded" style="height:300px"> 
+                    </div>
+                    <h4 class="card-body">EgyptAir</h4>
+                </div>
+                <div class="card m-3 bg-success text-light col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Air Arabia Egypt.png" class="w-100 m-0 rounded" style="height:300px"> 
+                    </div>
+                    <h4 class="card-body">Air Arabia Egypt</h4>
+                </div>
+                <div class="card m-3 bg-success text-light col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header p-0 pt-3">
+                        <img src="images/Flynas.png" class="w-100 m-0 rounded" style="height:300px"> 
+                    </div>
+                    <h4 class="card-body">Flynas</h4>
+                </div>
+            </div>
+        </section> <!-- sec10 -->
+        <hr>
+        <section class="shadow-lg pb-4">
+            <h3 class="text-center p-3">Follow us</h3>
+            <div class="row justify-content-center">
+                <div class="card m-3 bg-success col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header text-center text-white">Facebook</div>
+                    <div class="card-body text-center">
+                        <i class="fa-brands fa-facebook text-white" style="font-size:25px"></i>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="text-decoration-none text-warning">join</a>
+                    </div>
+                </div>
+                <div class="card m-3 bg-success col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header text-center text-white">Instagram</div>
+                    <div class="card-body text-center">
+                        <i class="fa-brands fa-instagram text-white" style="font-size:25px"></i>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="text-decoration-none text-warning">join</a>
+                    </div>
+                </div>
+                <div class="card m-3 bg-success col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header text-center text-white">Twitter</div>
+                    <div class="card-body text-center">
+                        <i class="fa-brands fa-twitter text-white" style="font-size:25px"></i>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="text-decoration-none text-warning">join</a>
+                    </div>
+                </div>
+                <div class="card m-3 bg-success col-lg-3 col-md-6 col-sm-10">
+                    <div class="card-header text-center text-white">Linkedin</div>
+                    <div class="card-body text-center">
+                        <i class="fa-brands fa-linkedin text-white" style="font-size:25px"></i>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="text-decoration-none text-warning">join</a>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- sec11 -->
+        <section class="shadow-lg d-flex flex-wrap">
+            <div class="flex-fill col-md-4 col-sm-10 p-4" style="height:300px">
+                <hr>
+                <div class="text-center">
+                    <i class="fa-solid fa-circle-nodes text-success"></i>
+                    <h4 class="d-inline">call us</hep>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p class="text-success">Tel : 000-000-000</p>
+                    <p class="text-success">Address : EGYPT</p>
+                    <p class="text-success">Fax : 000-000-000</p>
+                </div>
+            </div>
+            <div class="flex-fill col-md-4 col-sm-10 p-4" style="height:300px">
+                    <hr>
+                    <div class="text-center">
+                        <i class="fa-solid fa-link text-success"></i>
+                        <h4 class="d-inline">Important links</hep>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <a href="#" class="text-success text-info d-block p-2">Visit Us</a>
+                        <a href="#" class="text-success text-info d-block p-2">Take alook</a>
+                        <a href="#" class="text-success text-info d-block p-2">Your health is more important</a>
+                    </div>
+            </div>
+            <div class="flex-fill col-md-4 col-sm-10 p-4" style="height:300px">
+                <hr>
+                <div class="text-center">
+                    <i class="fa-brands fa-canadian-maple-leaf text-success"></i>
+                    <h4 class="d-inline">Vision</hep>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p class="text-success">Serveices for all</p>
+                    <p class="text-success">Provide best serveices</p>
+                    <p class="text-success">you will be better than before</p>
+                </div>
+            </div>
+        </section>
+        <footer class="p-4 text-center bg-success">
+            <hr>
+            <p class="text-white">Copyright &copy; 2020 Esraa Gamal Alamawy, Good Company. All rights</p>
+            <hr>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/tem3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
